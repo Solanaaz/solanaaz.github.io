@@ -163,6 +163,32 @@ footer img{
 	margin-bottom: 20px;
 }
 
+.font input[type="text"],
+        .font input[type="email"],
+        .font textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .font textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .font button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
 
 @media (max-width: 480px) { 
 header{
