@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Over the garden wall</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+            <img src="images/ovtg_black.png" alt="Logo ovtg">
+        </a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal image-gallery">
+            <div>
+                <a href="index.html">
+                <img src="images/ovtg.png" alt="ovtg logo">
+            </a>
+            </div>
+            </article>
+    </section>
+
+    <section class="secundario">
+        
+            <div class="text"><p class="font"style="font-weight: 700;">Map</p></div>
+            <article class="gallery">
+                <a href="images/the_unkown_original.jpg" data-lightbox="mygallery"><img src="images/the_unknown.jpg" alt="Image 1"></a>
+                <a href="images/map2_original.jpg" data-lightbox="mygallery"><img src="images/map2.jpg" alt="Image 2"></a>
+            </article>
+        
+    </section>
+
+    <section class="secundario">
+        <div class="text"><p class="font" style="font-weight: 700;">Locations</p></div>
+        <article class="gallery">
+                <div>
+                <a class="example-image-link" href="images/the_mill.webp" data-lightbox="mygallery2" data-title="The Mill"><img src="images/the_mill_min.jpg" alt="Image 1"></a>
+                <a class="example-image-link" href="images/tavern.jpg" data-lightbox="mygallery2" data-title="Tavern"><img src="images/tavern_min.jpg" alt="Image 1"></a>
+                <a class="example-image-link" href="images/schoolhouse.jpg" data-lightbox="mygallery2" data-title="Schoolhouse"><img src="images/schoolhouse_min.jpg" alt="Image 1"></a>
+                <a class="example-image-link" href="images/riverboat.jpg" data-lightbox="mygallery2" data-title="Riverboat"><img src="images/riverboat_min.jpg" alt="Image 1"></a>
+            </div>
+            <div>
+            <a class="example-image-link" href="images/pottsfield.jpg" data-lightbox="mygallery2" data-title="Pottsfield"><img src="images/pottsfield_min.jpg" alt="Image 1"></a>
+            <a class="example-image-link" href="images/emdicott_mansion.webp" data-lightbox="mygallery2" data-title="Endicott Mansion"><img src="images/emdicott_mansion_min.jpg" alt="Image 1"></a>
+            <a class="example-image-link" href="images/aunty_whispers.webp" data-lightbox="mygallery2" data-title="Aunty Whispers house"><img src="images/aunty_whispers_min.jpg" alt="Image 1"></a>
+            <a class="example-image-link" href="images/addelaides_cottage.jpg" data-lightbox="mygallery2" data-title="Addelaide's Cottage"><img src="images/addelaides_cottage_min.jpg" alt="Image 1"></a>
+            </div>
+        </article>
+        
+    </section>
+
+    <section class="secundario">
+        <div class="text"><p class="font" style="font-weight: 700;">Songs</p></div>
+        <div class="gallery">
+            <iframe class="example-image-link" src="https://www.youtube.com/embed/WJeeA_O88Zw?si=o_ZW5Qc25A_YpskS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    
+    </section>
+
+
+
+    <footer href>
+        <a href="https://www.max.com/ar/es/shows/mas-alla-del-jardin/88146fd3-68f9-4916-9847-37f4488164a7" target="_blank">
+        <img src="images/redes/hbo.png" alt="HBO">
+    </a>
+    </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const texts = document.querySelectorAll(".text");
+            const galleries = document.querySelectorAll(".gallery");
+
+            texts.forEach((text, index) => {
+                text.addEventListener("click", function() {
+                    galleries[index].classList.toggle("enlarged");
+                });
+            });
+        });
+    </script>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

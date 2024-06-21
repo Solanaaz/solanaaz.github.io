@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Over the Garden Wall</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#">
+            <img src="images/ovtg_black.png" alt="Logo OTGW">
+        </a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="principal image-community">
+            <div>
+                <a href="index.html">
+                <img src="images/ovtg.png" alt="OTGW logo">
+                </a>
+            </div>
+            </article>
+
+        <article class="secundario">
+            <div>
+                <a class="example-image-link" href="images/plot-div.jpg" data-lightbox="woods" data-title="The Woods<br>Two brothers get lost in a mysterious place and try to find their way back home."><img class="example-image" src="images/plot-div.jpg" alt="The woods"/></a>
+                <h4 class="font">Plot</h4> 
+            </div>
+            <div>
+                <a class="example-image-link" href="images/episodes-div.jpg" data-lightbox="woods" data-title="Episodes<br>Episode 1: The Old Grist Mill.
+                    <br>Episode 2: Hard Times at the Huskin' Bee.
+                    <br>Episode 3: Schooltown Follies.
+                    <br>Episode 4: Songs of the Dark Lantern.
+                    <br>Episode 5: Mad Love.
+                    <br>Episode 6: Lullaby in Frogland.
+                    <br>Episode 7: The Ringing of the Bell.
+                    <br>Episode 8: Babes in the Wood."><img class="example-image" src="images/episodes-div.jpg" alt="The woods"/></a>
+                <h4 class="font">Episodes</h4> 
+            </div>
+            <div>
+                <a class="example-image-link" href="images/cast-div.jpg" data-lightbox="woods" data-title="The Woods<br>Elijah Wood and Collin Dean voice the protagonists Wirt and Greg, and Melanie Lynskey voices Beatrice, a bluebird. The series' voice cast also includes Christopher Lloyd, Tim Curry, Bebe Neuwirth, Chris Isaak, Shirley Jones, Thomas Lennon, Jack Jones, Jerron Paxton, John Cleese and Samuel Ramey."><img class="example-image" src="images/cast-div.jpg" alt="The woods"/></a>
+                <h4 class="font">Cast</h4> 
+            </div>
+        </article>
+
+        <article class="secundario">
+        <div>
+            <iframe class="example-image-link" src="https://www.youtube.com/embed/36mAsVSH_-s?si=SpIjWbi2nC84ZLiB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </div>
+        <div>
+            <iframe class="example-image-link" src="https://www.youtube.com/embed/X-0vZeaIrFg?si=ZRJdsNH-bxIHQf53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </article>
+
+    </section>
+    
+    <footer href>
+        <a href="https://www.max.com/ar/es/shows/mas-alla-del-jardin/88146fd3-68f9-4916-9847-37f4488164a7" target="_blank">
+        <img src="images/redes/hbo.png" alt="HBO">
+    </a>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
