@@ -16,8 +16,8 @@
 <body>
     <header>
         <div>
-            <a href="#">
-            <img src="images/ovtg_black.png" alt="Logo OTGW">
+            <a href="index.html">
+            <img class="zoom" src="images/ovtg_black.png" alt="Logo OTGW">
         </a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
@@ -35,17 +35,16 @@
         <article class="principal image-char">
             <div>
                 <a href="index.html">
-                <img class="example-image" src="images/ovtg.png" alt="OTGW logo">
+                <img class="zoom" src="images/ovtg.png" alt="OTGW logo">
             </a>
             </div>
             </article>
     </section>
 
-
     <section class="secundario">
             <div style="padding-top: 5%;">   
                     <a href="images/image_home_2.jpg" data-lightbox="char1" data-title="Wirt">
-                    <img src="images/image_home_2.jpg">
+                    <img class="zoom" src="images/image_home_2.jpg">
                     </a>
                 </div>
             <div><p class="font" style="font-size: xx-large; font-weight: 700;">Wirt</p></div>
@@ -53,8 +52,8 @@
 
     <section class="secundario">
         <div style="padding-top: 5%;">   
-                <a class="example-image-link" href="images/greg.jpg" data-lightbox="char2" data-title="Greg">
-                <img class="image-example" src="images/greg.jpg">
+                <a class="example-image-link" href="images/greg.jpg" data-lightbox="char1" data-title="Greg">
+                <img class="zoom" src="images/greg.jpg">
                 </a>
         </div>
         <div><p class="font" style="font-size: xx-large; font-weight: 700;">Greg</p></div>
@@ -62,8 +61,8 @@
 
     <section class="secundario">
         <div style="padding-top: 5%;">   
-                <a class="example-image-link" href="images/Beatrice.webp" data-lightbox="char3" data-title="descripcion">
-                <img class="image-example" src="images/Beatrice.webp">
+                <a class="example-image-link" href="images/Beatrice.webp" data-lightbox="char1" data-title="descripcion">
+                <img class="zoom" src="images/Beatrice.webp">
                 </a>
         </div>
         <div><p class="font" style="font-size: xx-large; font-weight: 700;">Beatrice</p></div>
@@ -71,8 +70,8 @@
 
     <section class="secundario">
         <div style="padding-top: 5%;">   
-                <a class="example-image-link" href="images/jason_funderburker.jpg" data-lightbox="char4" data-title="descripcion">
-                <img class="image-example" src="images/jason_funderburker.jpg">
+                <a class="example-image-link" href="images/jason_funderburker.jpg" data-lightbox="char1" data-title="descripcion">
+                <img class="zoom" src="images/jason_funderburker.jpg">
                 </a>
         </div>
         <div><p class="font" style="font-size: xx-large; font-weight: 700;">Jason Funderburker</p></div>
@@ -80,8 +79,8 @@
     
     <section class="secundario">
         <div style="padding-top: 5%;">   
-                <a class="example-image-link" href="images/woodsman.jpg" data-lightbox="char5" data-title="descripcion">
-                <img class="image-example" src="images/woodsman.jpg">
+                <a class="example-image-link" href="images/woodsman.jpg" data-lightbox="char1" data-title="descripcion">
+                <img class="zoom" src="images/woodsman.jpg">
                 </a>
         </div>
         <div><p class="font" style="font-size: xx-large; font-weight: 700;">Woodsman</p></div>
@@ -104,7 +103,20 @@
           }
         }
     </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const texts = document.querySelectorAll(".text");
+            const galleries = document.querySelectorAll(".gallery");
 
+            texts.forEach((text, index) => {
+                text.addEventListener("click", function() {
+                    galleries[index].classList.toggle("enlarged");
+                });
+            });
+        });
+    </script>
+    
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </body>

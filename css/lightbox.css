@@ -169,9 +169,10 @@ a img {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  font-size: 25px;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 1.2em;
+  font-family: 'Libre Baskerville'
 }
 
 .lb-data .lb-caption a {

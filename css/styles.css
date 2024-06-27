@@ -45,11 +45,12 @@ section{
 	margin-right: auto;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 .principal{
 	width: 100%;
-	height: 650px;
+	height: 550px;
 	background-image: url(../images/OVTG_home.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -79,6 +80,8 @@ section{
 	margin-bottom: 2rem;
 	display: flex;
 }
+
+
 h4{
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -164,8 +167,8 @@ footer img{
 }
 
 .font input[type="text"],
-        .font input[type="email"],
-        .font textarea {
+.font input[type="email"],
+.font textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -174,12 +177,12 @@ footer img{
             box-sizing: border-box;
         }
 
-        .font textarea {
+.font textarea {
             resize: vertical;
             height: 100px;
         }
 
-        .font button {
+.font button {
             background-color: #007bff;
             color: white;
             padding: 10px;
@@ -189,6 +192,31 @@ footer img{
             width: 100%;
             font-size: 16px;
         }
+
+.cinzel-decorative-regular {
+	font-family: "Cinzel Decorative", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+		  
+.cinzel-decorative-bold {
+	font-family: "Cinzel Decorative", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+		  
+.cinzel-decorative-black {
+	font-family: "Cinzel Decorative", serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.zoom {
+	transition: transform 0.2s ease;
+}
+.zoom:hover {
+    transform: scale(1.2); /* Escala la imagen al 120% */
+}
 
 @media (max-width: 480px) { 
 header{
@@ -232,8 +260,8 @@ section{
 	margin-right: auto;
 }
 .principal{
-	height: 250px;
-	padding: 10%;
+	height: 215px;
+	/* padding: 10% */
 }
 .secundario{
 	margin-top: 1%;
@@ -265,6 +293,12 @@ footer img{
 	display: none; /* Oculta la galería por defecto */
 	justify-content: center;
 	padding-right: 5%;
+}
+.zoom {
+	transition: none;
+}
+.zoom:hover {
+    transform: none;
 }
 
 
