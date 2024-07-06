@@ -34,6 +34,7 @@ a{
 	color: #000000;
 }
 .font{ text-decoration: none; color: #ffffff; text-align: center;}
+.font2{ font-family: 'Libre Baskerville'; text-decoration: none; color: #ffffff; text-align: center;}
 
 .icon { display: none; }
 
@@ -117,6 +118,17 @@ footer img{
 
 .image-community{
 	background-image: url('../images/community_logo.jpg');
+	background-size: cover;
+	display: flex;
+}
+.image-watchlist{
+	background-image: url('../images/watchlist-bg.jpg');
+	background-size: cover;
+	display: flex;
+}
+
+.image-episodes{
+	background-image: url('../images/episodes-logo.png');
 	background-size: cover;
 	display: flex;
 }
@@ -283,7 +295,9 @@ h4{
 }
 footer{
 	height: 80px;
-	justify-content: space-evenly;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 footer img{
 	max-width: 3rem;
